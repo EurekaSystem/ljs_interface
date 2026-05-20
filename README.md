@@ -4,6 +4,7 @@
 
 The `ljs package` implements a ROS 2 lifecycle-based skill for interfacing with an external LJS scanning device. It provides a structured interface to a Keyence scanner, handling its initialization, activation, scanning, and shutdown through the ROS 2 lifecycle state machine.
 For each scan, the skill produces two output files: one containing depth data, used to represent the 3D structure of the scanned scene, and one containing luminance data, which captures intensity information useful for visual inspection and analysis.
+
 ---
 
 ## Requirements
