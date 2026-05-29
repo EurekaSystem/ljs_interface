@@ -1,0 +1,47 @@
+Copyright 2026 
+Eureka System S.R.L 
+Author:Mattia Gava 
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+The following files: libljscom.so and LJSwrap.py have been integrated "as is" and are covered by this license.
+
+# Software License Agreement
+## NOTICE TO USER
+PLEASE READ THIS SOFTWARE LICENSE AGREEMENT (THIS “AGREEMENT”) CAREFULLY. BY USING ALL OR ANY PORTION OF THIS “SOFTWARE”, YOU ARE AGREEING TO BE BOUND BY ALL THE TERMS AND CONDITIONS OF THIS AGREEMENT. IF YOU DO NOT AGREE TO ANY TERMS OF THIS AGREEMENT, DO NOT USE THIS SOFTWARE.
+---
+## 1. Grant of License
+Conditioned upon compliance with all of the terms and conditions of this Agreement, KEYENCE grants you a nonexclusive and nontransferable license.
+---
+## 2. Restrictions
+Except for installation of updates or new functions provided by KEYENCE, you may not modify or add any function to this Software.
+### a)
+You may not reverse engineer, decompile or disassemble this Software.
+### b)
+You may not create derivative works based on this Software.
+### c)
+Other than expressly stated by KEYENCE, you may not resell, retransfer, rent or otherwise redistribute this Software to any third parties. However, you may redistribute this Software with the application that you developed using this Software.
+---
+## 3. Intellectual Property Rights
+Except as expressly stated herein, KEYENCE reserves all right, title and interest in this Software, and all associated copyrights, trademarks, and other intellectual property rights therein.
+---
+## 4. Disclaimer
+KEYENCE is licensing this Software to you “AS IS” and without any warranty of any kind. In no event will KEYENCE or its suppliers be liable to you for any damages, claims, costs or any lost profits caused by using this Software.
+---
+## 5. Support
+KEYENCE shall not provide technical support in accordance with this Software including the use of this Software.
+---
+## 6. Termination
+### 6.1
+Your license under this Agreement will terminate automatically if you destroy this Software and the copy of this Software in your possession or voluntarily return this Software to us.
+### 6.2
+Your license under this Agreement will terminate automatically without any notice from KEYENCE if you fail to comply with any of the terms and conditions of this Agreement. Promptly upon termination, you shall cease all use of this Software and destroy all copies, full or partial, of this Software in your possession or control.
+### 6.3
+You will compensate KEYENCE for costs or any lost profits caused by your violation or breach of any term of this Agreement.
+---
+## 7. Governing Law
+This Agreement will be governed by and construed in accordance with the substantive laws of Japan without regards to the principles of conflicts of law.

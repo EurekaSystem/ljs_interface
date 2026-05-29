@@ -20,6 +20,17 @@ This skill requires a Keyence scanner and its IP address.
 All required ROS dependencies are declared in the `package.xml` files.  
 External dependencies for the scanner device are located in the `ljs_lib` directory.
 
+### Compatible hardware
+
+This skill requires  one of the following Keyence scanners:
+- LJ-X8020
+- LJ-X8060
+- LJ-X8080
+- LJ-X8200
+- LJ-X8300
+- LJ-X8400
+- LJ-X8900
+
 ---
 
 ## Build the Package
