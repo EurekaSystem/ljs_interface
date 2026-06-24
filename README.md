@@ -9,7 +9,8 @@ For each scan, the skill produces two output files: one containing depth data, u
 
 ## Requirements
 
-- ROS 2
+- Vulcanexus Jazzy
+- ROS 2 Jazzy
 - Python 3
 - `colcon` build system
 
@@ -23,13 +24,13 @@ External dependencies for the scanner device are located in the `ljs_lib` direct
 ### Compatible hardware
 
 This skill requires  one of the following Keyence scanners:
-- LJ-X8020
-- LJ-X8060
-- LJ-X8080
-- LJ-X8200
-- LJ-X8300
-- LJ-X8400
-- LJ-X8900
+- LJ-S015
+- LJ-S025
+- LJ-S040
+- LJ-S080
+- LJ-S160 
+- LJ-S320 
+- LJ-S640
 
 ---
 
@@ -200,7 +201,7 @@ if __name__ == '__main__':
 
 ```bash
 Goal sent
-Goal accepted
+Goal accepted7
 ```
 
 ---

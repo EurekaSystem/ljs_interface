@@ -1,0 +1,7 @@
+# empty action, only containing generic skill metadata
+
+std_skills/Meta meta
+---
+std_skills/Result result
+---
+std_skills/Feedback feedback

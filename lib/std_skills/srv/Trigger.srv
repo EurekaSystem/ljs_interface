@@ -1,0 +1,8 @@
+# empty service definition, meant to be used to trigger behaviours.
+# It only contains generic skill-related metadata
+#
+# Effectively identical to std_skills/srv/Empty.srv
+
+std_skills/Meta meta
+---
+std_skills/Result result
