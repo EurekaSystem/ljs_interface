@@ -1,13 +1,11 @@
 # LJS SKILL
 
-## Overview
+## Module introduction 
 
 The `ljs package` implements a ROS 2 lifecycle-based skill for interfacing with an external LJS scanning device. It provides a structured interface to a Keyence scanner, handling its initialization, activation, scanning, and shutdown through the ROS 2 lifecycle state machine.
 For each scan, the skill produces two output files: one containing depth data, used to represent the 3D structure of the scanned scene, and one containing luminance data, which captures intensity information useful for visual inspection and analysis.
 
----
-
-## Requirements
+### Requirements
 
 - Vulcanexus Jazzy
 - ROS 2 Jazzy
@@ -21,20 +19,7 @@ This skill requires a Keyence scanner and its IP address.
 All required ROS dependencies are declared in the `package.xml` files.  
 External dependencies for the scanner device are located in the `ljs_lib` directory.
 
-### Compatible hardware
-
-This skill requires  one of the following Keyence scanners:
-- LJ-S015
-- LJ-S025
-- LJ-S040
-- LJ-S080
-- LJ-S160 
-- LJ-S320 
-- LJ-S640
-
----
-
-## Build the Package
+### Build the Package
 
 Source your ROS 2 environment and build the workspace:
 
@@ -45,27 +30,9 @@ colcon build
 source install/setup.bash
 ```
 
----
 
-## Run the Skill
 
-```bash
-ros2 launch ljs_skill ljs.launch.py
-```
-
-### Expected Output
-
-```bash
-Initialising...
-Skill ljs started, but not yet configured.
-Skill ljs is configured, but not yet active.
-Skill ljs is active and running.
-Skill ljs: performing background task...
-```
-
----
-
-## Architecture
+### Architecture
 
 - ROS 2 lifecycle node
 - Action server: `ljs_scan`
@@ -77,9 +44,8 @@ Main logic:
 ljs_skill_impl.py
 ```
 
----
 
-## Execution Requirements
+### Execution Requirements
 
 ### Input Parameters
 
@@ -103,9 +69,7 @@ The following parameters are part of the custom action interface `ljs_skill_msgs
 
 - `LJS device IP`
 
----
-
-## Output Files
+### Output Files
 
 The `scan()` method generates the following files inside the destination folder:
 
@@ -121,7 +85,49 @@ The `scan()` method generates the following files inside the destination folder:
 
 ---
 
-## Testing the Skill
+## Compatible hardware
+
+This skill requires  one of the following Keyence scanners:
+- LJ-S015
+- LJ-S025
+- LJ-S040
+- LJ-S080
+- LJ-S160 
+- LJ-S320 
+- LJ-S640
+
+---
+## Quick start
+
+```bash
+ros2 launch ljs_skill ljs.launch.py
+```
+
+### Expected Output
+
+```bash
+Initialising...
+Skill ljs started, but not yet configured.
+Skill ljs is configured, but not yet active.
+Skill ljs is active and running.
+Skill ljs: performing background task...
+```
+
+### Important Notes
+
+- Action names must match between server and client.
+- The device ID must be configured correctly.
+- After modifying messages(`ljs_skill_msgs`), rebuild the workspace:
+
+```bash
+colcon build
+source install/setup.bash
+```
+
+
+---
+
+## Basic demo
 
 You can test the skill using a simple ROS 2 action client.
 A sample demo client and the related setup instructions can be found in the `docs` folder. Follow the provided guide to configure and run a basic demonstration of the skill.
@@ -205,18 +211,6 @@ Goal sent
 Goal accepted7
 ```
 
----
-
-## Important Notes
-
-- Action names must match between server and client.
-- The device ID must be configured correctly.
-- After modifying messages(`ljs_skill_msgs`), rebuild the workspace:
-
-```bash
-colcon build
-source install/setup.bash
-```
 
 ---
 
@@ -259,7 +253,7 @@ If needed, update the action name:
 
 ---
 
-## Common Failure Cases
+## Limitations
 
 - **Action server not available (`ljs_scan` missing)**
   - Node not launched correctly
