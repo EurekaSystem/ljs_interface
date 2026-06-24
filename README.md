@@ -124,6 +124,7 @@ The `scan()` method generates the following files inside the destination folder:
 ## Testing the Skill
 
 You can test the skill using a simple ROS 2 action client.
+A sample demo client and the related setup instructions can be found in the `docs` folder. Follow the provided guide to configure and run a basic demonstration of the skill.
 
 ### Example Action Client
 
