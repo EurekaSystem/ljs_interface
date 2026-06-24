@@ -44,7 +44,7 @@ docker build -t <docker_name> .
 Start the container with the scans directory mounted:
 
 ```bash
-docker run -v /opt/scans:/opt/scans <docker_name> ros2 launch ljs_skill ljs.launch.py
+docker run -v /opt/scans:/opt/scans <docker_name> ros2 launch ljs ljs.launch.py
 ```
 
 ## Run the skill test client

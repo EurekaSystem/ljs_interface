@@ -4,6 +4,7 @@
 from setuptools import find_packages, setup
 from glob import glob
 
+package_name = 'ljs'
 NAME = "ljs"
 
 setup(
@@ -25,6 +26,9 @@ setup(
             ['config/' + NAME]),
         ('share/' + NAME + '/config', ['config/00-defaults.yml']),
     ],
+    package_data={
+                package_name: ['ljs_lib/*.so'],
+            },
     tests_require=['pytest'],
     install_requires=['setuptools'],
     zip_safe=True,
