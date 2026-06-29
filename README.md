@@ -276,4 +276,6 @@ If needed, update the action name:
 
 ---
 
+## Acknowledgement
+
 This work has been supported by the project “Agile, human-centric, and Real-tIme enabled open SourcE technologies advancing industrial HRI in Europe” (ARISE), which received funding from the European Union’s Horizon Europe research and innovation program under grant agreement No. 101135784.
